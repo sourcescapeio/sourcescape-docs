@@ -54,6 +54,7 @@ Quick search is a way of adding several selectors all at once.
 ## Root selectors
 
 `require('express')` will select any imports.
+
 `<identifier>` will select an identifier.
 
 
@@ -82,23 +83,23 @@ These can be chained together.
 ```
 function() {}
 ```
-Get an empty function selector. This will select any function.
+Get an empty function selector to return all functions.
 
 ```
 function myFunc() {}
 ```
-This will select any function named myFunc.
+This will select all functions named myFunc.
 
 
 ```
 function(arg) {}
 ```
-This will select any function and its first argument.
+This will select all functions with their first arguments.
 
 ```
 function(_, arg) {}
 ```
-This will select any function and its second argument.
+This will select all functions with their second arguments.
 
 
 ## Class selector
